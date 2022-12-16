@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Andra Pop">
+    <meta name="keywords" content="Portofoliu profesional - architects">
+    <meta name="description" content="Compania Moonshine se ocupa cu design de interior si exterior">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moonshine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<style>
+    /* navbar */
+    .main-navbar {
+        background-color: rgb(250, 252, 248);
+    }
+
+    .main-navbar .navbar-brand {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    .main-navbar .navbar-brand img {
+        height: 50px;
+        margin-right: 10px;
+        vertical-align: bottom;
+    }
+
+    .main-navbar .nav-link {
+        color: rgb(0, 0, 0);
+    }
+
+    .main-navbar .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    /* slider */
+    .carousel-item .ratio img {
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel-caption .title {
+        font-size: 2.25rem;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    /* footer */
+    .main-footer {
+        background-color: rgb(42, 45, 36);
+
+    }
+
+    #contactus {
+        color: rgb(255, 255, 255);
+    }
+
+    .main-footer .logo {
+        color: white;
+        text-decoration: none;
+    }
+
+    .main-footer .logo img {
+        height: 30px;
+        margin-right: 6px;
+        vertical-align: bottom;
+    }
+</style>
+
+<body>
+
+    <header class="navbar navbar-expand-md main-navbar sticky-top">
+        <nav class="container-xxl">
+            <h1 class="navbar-brand">
+                <a class="nav-link" href="./index.html">
+                    <img src="./architect.png"> Moonshine
+                </a>
+            </h1>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="nav main-menu flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link" href="#desprenoi">Despre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#designexterior">Portofoliu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoniale">Testimoniale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactus">ContactUs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="slider" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3" aria-label="Slide 3" class=""></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="4" aria-label="Slide 4" class=""></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="./images/bg2.jpg" class="d-block w-100"
+                        alt="patru proiecte rulate pe un background din cărămidă albă">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                    <p class="title">Moonshine</p>
+                    <p>Visezi adesea la a avea o casă ca pe Pinterest? Moonshine se va asigura să-ți facă visul să
+                        devină realitate.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./images/pexels-photo-276267.jpeg" class="d-block w-100" alt="a stack of colors">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                    <p class="title">Design exterior</p>
+                    <p>Proiectele noastre</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./images/desk-office-pen-ruler.jpg" class="d-block w-100"
+                        alt="someone creating a design with a ruler on a piece of paper">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                    <p class="title">Design interior</p>
+                    <p>Proiectele noastre</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./images/blurred-background.jpg" class="d-block w-100"
+                        alt="calculator care este pornit pe un fundal albastru și care are blurat">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                    <p class="title">Testimoniale</p>
+                    <p>"Echipa Moonshine folosește cea mai nouă tehnologie in proiectele[...]."</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./images/office.jpg" class="d-block w-100"
+                        alt="calculator apple pus pe colțul din dreapta al biroului, iar pe colțul din stânga se află un suport de creioane">
+                </div>
+
+                <div class="carousel-caption shadow rounded">
+                    <p class="title">Contact Us</p>
+                    <p>Mergi la lista de contacte pentru a ne contacta</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="desprenoi">Despre noi</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <p>
+            Compania noastră se află în Marea Britanie și este condusă de frații Ross și Russ Vallhensink.
+            Ross este un agent imoboliar expert care caută și cercetează case neglijate, iar apoi le negociează prețul
+            de cupmărare.
+            Fratele său, Russ, este un antreprenor autorizat care, pe urmă, se ocupa cu renovarea acestor case. Ca
+            practică, intreprindem proiecte de toate formele și dimensiunile, de la case individuale la
+            clădiri comerciale, renovări și design interior. Pentru noi fiecare proiect pe care îl avem e o modalitate
+            unică de a ne exprima felul în care gândim și de a pune în practică ideile, totul îmbinat cu dorințele
+            cliențiilor, iar rezultatul este unul uluitor. Ne dezvoltăm constant și ținem pasul cu technologia prin
+            participarea la
+            diferite training-uri și workshop-uri. Ne plac provocările și mereu aplicăm noi cunoștințe proiectelor
+            noastre. Lucrăm cu arhitecți, ingineri și economiști. De asemena, suntem costant în contact cu
+            clienții noștri pentru a ne asigura că munca pe care o depunem îi mulțumește.
+        </p>
+
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="designexterior">Design exterior</h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-7 col-lg-8">
+                <img src="./ext1.png" alt="casă cu etaj și mansardă, albă cu terasă, piscină și spațiu verde">
+
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <h3 id="informații">INFO</h3>
+                <p>Locație: Monthey, Elveția</p>
+                <p>Arie: 4.680 mp</p>
+                <p>Status: terminat</p>
+                <p>An: 2020</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-7 col-lg-8">
+                <img src="./ext2.png" alt="casă cu etaj, albă cu gri cu terasă și spațiu verde în curtea din spate.">
+
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <h3 id="informații">INFO</h3>
+                <p>Locație: Constanța, Romania</p>
+                <p>Arie: 4.391 mp</p>
+                <p>Status: terminat</p>
+                <p>An: 2017</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="designinterior">Design interior</h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-7 col-lg-8">
+                <img src="./livingroom4.png"
+                    alt="livingroom plus kitchen: white settings-couch with short coffee table in the left corner, dining table with six chairs in the right corner and kitchen in the back. floor to ceiling windows through which can be seen a patio">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <h3 id="informații">INFO</h3>
+                <p>Locație: Rosewood, Pennsylvania</p>
+                <p>Arie: 1.000 mp</p>
+                <p>Status: terminat</p>
+                <p>An: 2022</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-7 col-lg-8">
+                <img src="./interiorkitchen2.png"
+                    alt="kitchen, white setting: marble texture table with six chairs, marble texture counter.">
+
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <h3 id="informații">INFO</h3>
+                <p>Locație: London, United Kingdom</p>
+                <p>Arie: 500 mp</p>
+                <p>Status: terminat</p>
+                <p>An: 2007</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-7 col-lg-8">
+                <img src="./bath5.png"
+                    alt="two sinks and three sqaure mirrors on the left wall, a big painting on the right wall, shower stall in the back right corner, floor to ceiling windows in the back next to the shower stall.">
+            </div>
+            <div class="col-12 col-md-5 col-lg-4">
+                <h3 id="informații">INFO</h3>
+                <p>Locație: Los Angeles, California</p>
+                <p>Arie: 630 mp</p>
+                <p>Status: terminat</p>
+                <p>An: 2010</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 id="testimoniale">Testimoniale</h2>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-12 col-md-6 ml-lg-3">
+                <div class="card">
+                    <img src="./t7.png" class="card-img-top"
+                        alt="girl with dark hair in a bun, hazel eyes and air pods in her ears standing in front of an orange background.">
+                    <div class="card-body">
+                        <h5 class="card-title">Naomi Witt</h5>
+                        <p class="card-text">"Nu am crezut niciodată că voi avea casa visurilor mele. Asta până când am
+                            angajat echipa de la
+                            Moonshine. De la primele întâlniri pe care le-am avut cu ei în care am discutat despre proiect
+                            mi-am
+                            dat seama că am făcut alegerea cea bună. Ross și Russ fac minuni. Au reusit sa transforme
+                            căbănuța
+                            mea dărăpănată de la munte într-o canabnă luxoasa cu cele mai noi funcții. Deci dacă vrei
+                            vreodată
+                            să-ți renovezi casa, Moonshine e soluția."</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 ml-lg-3">
+                <div class="card">
+                    <img src="./t1.png" class="card-img-top"
+                        alt="man, dark hair, brown eyes, dressed in a button down shirt.">
+                    <div class="card-body">
+                        <h5 class="card-title">Wren Tollouse</h5>
+                        <p class="card-text">"Am ales echipa de la Moonshine, deoarece le-am văzut munca la ei pe site și am
+                            fost plăcut
+                            surprinsă de ce am vazut in portofoliul lor. Așa că atunci and m-am decis că apartamentul meu
+                            trebuie renovat, i-am contactat și le-am spus tot ce mi-aș dori să aibă apartamentul meu din
+                            centrul Londrei. După o săptămână am semnat contractul, iar în mai puțin de o lună apartamentul
+                            meu a fost renovat. Când l-am văzut prima dată după ce echipa de la Moonshine au terminat
+                            lucrările nu mi-a venit să cred că e întradevăr al meu. Chiar fac o treabă bună."</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 ml-lg-3">
+                <div class="card">
+                    <img src="./t2.png" class="card-img-top"
+                        alt="smiling woman, dark, short, curly hair, dark skin dressed in a white shirt and a pink blazer.">
+                    <div class="card-body">
+                        <h5 class="card-title">Monica Geller</h5>
+                        <p class="card-text">"Ești în căutarea unei case pentru tine și familia ta, dar ai buget limitat?
+                            Atunci este momentul
+                            perfect să apelezi la compania Moonshine. Ei se vor asigura că îți vor găsi casa potrivită, dupa
+                            care o vor remodela după felul în care dorești."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 ml-lg-3">
+                <div class="card">
+                    <img src="./t3.png" class="card-img-top"
+                        alt="man, dark hair, brown eyes, black glasses, dressed in a gray shirt, arms folded in front of his chest.">
+                    <div class="card-body">
+                        <h5 class="card-title">Alex Drake</h5>
+                        <p class="card-text">"Echipa Moonshine folosește cea mai nouă tehnologie in proiectele lor și își
+                            dau silința. Se vede
+                            că muncesc din greu și că le place ceea ce fac. Sunt mereu în contact cu clienții lor pentru a
+                            se asigura că aceștia sunt mulțumiți de rezultate. Nu regret nici o secundă că i-am ales."</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer mt-5">
+        <div class="container">
+             <h2 id="contactus">Contact Us</h2>
+            <div class="d-flex justify-content-between pt-3">
+                <ul class="nav justify-content-center list-unstyled d-flex">
+                    <li class="me-3">
+                        <a href="https://ro-ro.facebook.com/">
+                            <img src="./facebook.png" alt="facebook icon">
+                        </a>
+                    </li>
+                    <li class="me-3">
+                        <a href="https://www.instagram.com/">
+                            <img src="./instagram.png" alt="instagram icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/i/flow/login">
+                            <img src="./twitter.png" alt="twitter icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-center">
+                <div class="text-muted pb-3">© 2022 Company, Inc</div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
